@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .h2-width {
+        width: 35%;
+      }
+
+      /* personalizzare bootstrap a mano è "scomodo", impareremo metodi migliori! */
+      /* section > div:first-of-type {
+        color: black !important;
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="m-3 m-md-2 m-lg-0">Hello, world!</h1>
+      <!-- 3 da mobile, 2 da medium in su e 0 da large in su -->
+      <h2 class="h2-width mx-auto mb-0 text-center shadow-lg">SottoTitolo</h2>
+    </header>
+    <main>
+      <p class="fs-3">SONO IL MAIN!</p>
+      <section class="d-flex w-50 mx-auto justify-content-between">
+        <div class="py-2 fw-bold text-primary bg-secondary-subtle">UNO</div>
+        <div
+          class="py-2 fw-bold text-success border border-success border-4 border-end-0 rounded-3"
+        >
+          DUE
+        </div>
+        <div class="pt-1 pt-md-3 pt-lg-5 fw-bold text-danger">TRE</div>
+      </section>
+      <section>
+        <h1>IMPAGINAZIONE A 12 COLONNE</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col col-12 col-md-4 col-lg-6">
+              <!-- se è da sola, si dice che la col è "larga 12" -->
+              <img src="https://placedog.net/800" class="w-100" />
+            </div>
+            <div class="col col-12 col-md-8 col-lg-6">
+              <!-- se è da sola, si dice che la col è "larga 12" -->
+              <img src="https://placedog.net/800" class="w-100" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
